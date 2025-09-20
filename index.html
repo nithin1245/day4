@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Website</title>
+    <style>
+        /* Reset some defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #333, #555);
+            color: white;
+            padding: 30px 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #ff6600;
+            border-radius: 4px;
+            transform: scale(1.1);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #home {
+            background: #ffffff;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+        }
+
+        #home h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        #about {
+            background: #f0f0f0;
+            border-left: 5px solid #ff6600;
+            padding: 60px;
+            border-radius: 10px;
+            margin: 40px auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ff6600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #111;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my website! 🎉</p>
+        <p>This is the home section where you can showcase your main content.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This is the about section. Here you can write more details about yourself or your website.
+            Use this area to describe your purpose, mission, or story in a professional and attractive way.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+        <p>Designed with ❤️ using HTML & CSS</p>
+    </footer>
+</body>
+
+</html>
